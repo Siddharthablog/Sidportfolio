@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siddhartha Mani - Information Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #cbd5e1;
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at top, rgba(30, 41, 59, 0.8), #0f172a), #0f172a;
+        }
+        .card-gradient {
+            background: linear-gradient(145deg, #1e293b, #0f172a);
+            border: 1px solid #334155;
+        }
+        .highlight-text {
+            background: -webkit-linear-gradient(45deg, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .typed-cursor {
+            opacity: 1;
+            animation: blink 0.7s infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .scroll-reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .modal {
+            transition: opacity 0.3s ease;
+        }
+        .modal-content {
+            background-color: #1e293b;
+            border: 1px solid #475569;
+            transition: transform 0.3s ease;
+        }
+        .code-block {
+            background-color: #020617;
+            color: #e2e8f0;
+            padding: 1.25rem;
+            border-radius: 0.5rem;
+            overflow-x: auto;
+            font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+            font-size: 0.9rem;
+            border: 1px solid #334155;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Hero Section -->
+    <header class="hero-gradient min-h-screen flex items-center justify-center p-6">
+        <div class="text-center max-w-4xl mx-auto">
+            <div class="mb-4">
+                <img src="https://placehold.co/128x128/1e293b/a5b4fc?text=SM" alt="Siddhartha Mani Initials" class="rounded-full mx-auto border-4 border-slate-700 shadow-2xl">
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-slate-100">Siddhartha Mani</h1>
+            <div class="mt-4 text-2xl md:text-3xl font-semibold h-10">
+                <span class="highlight-text" id="typed-text"></span><span class="typed-cursor">|</span>
+            </div>
+            <p class="mt-8 max-w-2xl mx-auto text-lg md:text-xl text-slate-400 leading-relaxed">
+                Information Developer specializing in AI documentation, API content, and cloud-native automation. I transform complex technology into usable, empowering documentation for developers and enterprise audiences.
+            </p>
+            <div class="mt-12 flex justify-center items-center gap-4 flex-wrap">
+                <a href="#projects" class="bg-indigo-500 text-white font-semibold py-3 px-8 rounded-full hover:bg-indigo-600 transition-all duration-300 transform hover:scale-105 shadow-lg">View My Work</a>
+                <a href="https://www.linkedin.com/in/siddhartha-mani" target="_blank" rel="noopener noreferrer" class="bg-slate-700 text-slate-200 font-semibold py-3 px-8 rounded-full hover:bg-slate-600 transition-all duration-300 transform hover:scale-105 shadow-lg">Connect on LinkedIn</a>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2">
+            <a href="#about">
+                <svg class="w-8 h-8 text-slate-500 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+            </a>
+        </div>
+    </header>
+
+    <main class="container mx-auto max-w-5xl px-6 py-20 md:py-32">
+        <!-- About Section -->
+        <section id="about" class="scroll-reveal">
+            <div class="text-center">
+                 <h2 class="text-3xl md:text-4xl font-bold highlight-text">My Philosophy</h2>
+                 <p class="mt-6 max-w-3xl mx-auto text-lg text-slate-400 leading-relaxed">
+                    Engineering is about more than code—it's about solving real-world problems through purposeful automation and intelligent design. My mission is to create efficient, scalable solutions that empower users and enhance business outcomes. I believe in transparent, maintainable systems and a collaborative engineering culture.
+                 </p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="mt-20 md:mt-32 scroll-reveal">
+            <h2 class="text-3xl md:text-4xl font-bold text-center highlight-text">Core Expertise</h2>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card-gradient p-6 rounded-xl shadow-2xl transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-indigo-500/20">
+                    <h3 class="text-xl font-bold text-slate-100">Strategic Competencies</h3>
+                    <ul class="mt-4 space-y-2 text-slate-400">
+                        <li>AI Agent Architecture & Application Design</li>
+                        <li>Document Processing Automation</li>
+                        <li>Workflow & System Integration</li>
+                        <li>Technical Mentorship</li>
+                    </ul>
+                </div>
+                <div class="card-gradient p-6 rounded-xl shadow-2xl transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-indigo-500/20">
+                    <h3 class="text-xl font-bold text-slate-100">Technical Proficiencies</h3>
+                    <ul class="mt-4 space-y-2 text-slate-400">
+                        <li>Python, Langchain, Ollama, IBM Cloud APIs</li>
+                        <li>Web Scraping, Playwright, Chrome Extensions</li>
+                        <li>Data Extraction & Processing (PDFs, complex docs)</li>
+                    </ul>
+                </div>
+                <div class="card-gradient p-6 rounded-xl shadow-2xl transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-indigo-500/20">
+                    <h3 class="text-xl font-bold text-slate-100">Execution & Tools</h3>
+                    <ul class="mt-4 space-y-2 text-slate-400">
+                        <li>Agile Project Management</li>
+                        <li>End-to-End Application Development</li>
+                        <li>Cloud Deployment (IBM Cloud, AWS)</li>
+                        <li>Testing, Debugging & Documentation</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="mt-20 md:mt-32 scroll-reveal">
+            <h2 class="text-3xl md:text-4xl font-bold text-center highlight-text">Impact-Driven Projects</h2>
+            <div class="mt-12 space-y-16">
+                <!-- Project 1 -->
+                <div class="project-card grid grid-cols-1 md:grid-cols-5 gap-8 items-center">
+                    <div class="md:col-span-3">
+                        <h3 class="text-2xl font-bold text-slate-100">PDF Link Verification Platform (2025)</h3>
+                        <p class="mt-4 text-slate-400 leading-relaxed">
+                            Built a Python web app for automated extraction and validation of hyperlinks in user-uploaded PDF documents. Leveraged Langchain and cloud microservices for scale and speed.
+                        </p>
+                        <div class="mt-6">
+                            <span class="inline-block bg-slate-700 text-sky-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Python</span>
+                            <span class="inline-block bg-slate-700 text-sky-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Langchain</span>
+                            <span class="inline-block bg-slate-700 text-sky-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">IBM Cloud</span>
+                            <span class="inline-block bg-slate-700 text-sky-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Playwright</span>
+                        </div>
+                        <p class="mt-6 text-lg font-semibold highlight-text">
+                            Result: Automated verification with instant reporting and error tracing—reduced manual QA workload by 80%.
+                        </p>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card grid grid-cols-1 md:grid-cols-5 gap-8 items-center">
+                     <div class="md:col-span-3">
+                        <h3 class="text-2xl font-bold text-slate-100">RAG Agent for IBM AI Assistant (2025)</h3>
+                        <p class="mt-4 text-slate-400 leading-relaxed">
+                            Architected a Retrieval-Augmented Generation (RAG) system for AI-powered document question answering, integrating advanced LLMs and customized retrievers.
+                        </p>
+                        <div class="mt-6">
+                            <span class="inline-block bg-slate-700 text-purple-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">IBM Watsonx</span>
+                            <span class="inline-block bg-slate-700 text-purple-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Ollama</span>
+                            <span class="inline-block bg-slate-700 text-purple-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Jupyter</span>
+                            <span class="inline-block bg-slate-700 text-purple-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Database Workflows</span>
+                        </div>
+                        <p class="mt-6 text-lg font-semibold highlight-text">
+                            Result: Improved answer accuracy and agent responsiveness by 65%.
+                        </p>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card grid grid-cols-1 md:grid-cols-5 gap-8 items-center">
+                     <div class="md:col-span-3">
+                        <h3 class="text-2xl font-bold text-slate-100">Web Content Extraction with Playwright</h3>
+                        <p class="mt-4 text-slate-400 leading-relaxed">
+                            Developed robust web-scraping modules using Playwright to process dynamic, JavaScript-heavy sites for IBM Power documentation aggregation.
+                        </p>
+                        <div class="mt-6">
+                            <span class="inline-block bg-slate-700 text-blue-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Playwright</span>
+                            <span class="inline-block bg-slate-700 text-blue-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Chrome Extension Dev</span>
+                            <span class="inline-block bg-slate-700 text-blue-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Content Summarization</span>
+                        </div>
+                        <p class="mt-6 text-lg font-semibold highlight-text">
+                            Result: Enabled extraction of structured data from pages previously inaccessible to traditional scrapers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 mt-20 md:mt-32">
+        <div class="container mx-auto max-w-5xl px-6 py-12 text-center">
+            <h2 class="text-2xl md:text-3xl font-bold text-slate-100">Let's Build Together</h2>
+            <p class="mt-4 max-w-xl mx-auto text-slate-400">
+                I’m always open to new opportunities, collaborations, and technical challenges. Let’s connect!
+            </p>
+            <div class="mt-8">
+                 <a href="mailto:mani.siddhartha@gmail.com" class="bg-indigo-500 text-white font-semibold py-3 px-8 rounded-full hover:bg-indigo-600 transition-all duration-300 transform hover:scale-105 shadow-lg inline-block">mani.siddhartha@gmail.com</a>
+            </div>
+            <p class="text-sm text-slate-500 mt-12">© 2025 Siddhartha Mani. Designed for impact.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Typing effect
+        const typingText = [
+          "Information Developer",
+          "AI Documentation Expert",
+          "API Content Architect",
+          "Python & Langchain Developer"
+        ];
+        let typeIndex = 0, charIndex = 0;
+        const textElement = document.getElementById('typed-text');
+        function type() {
+            if (charIndex < typingText[typeIndex].length) {
+                textElement.textContent += typingText[typeIndex].charAt(charIndex);
+                charIndex++;
+                setTimeout(type, 100);
+            } else {
+                setTimeout(erase, 2000);
+            }
+        }
+        function erase() {
+            if (charIndex > 0) {
+                textElement.textContent = typingText[typeIndex].substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(erase, 50);
+            } else {
+                typeIndex = (typeIndex + 1) % typingText.length;
+                setTimeout(type, 500);
+            }
+        }
+        document.addEventListener('DOMContentLoaded', () => setTimeout(type, 500));
+        // Scroll reveal
+        const revealElements = document.querySelectorAll('.scroll-reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        revealElements.forEach(el => revealObserver.observe(el));
+    </script>
+</body>
+</html>
